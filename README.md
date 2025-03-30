@@ -1,2 +1,2 @@
-# 888labs.ai
-888labs - developing Dex PA (conversational multi-modal AI for interview scheduling)
+# 69lab.ai
+69lab - developing (conversational multi-modal AI for interview scheduling)
