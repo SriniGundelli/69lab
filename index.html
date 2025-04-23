@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sixty Nine labs - Coming Soon</title>
+  <title>Sixty Nine labs - Leadership Talent Solutions</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/SriniGundelli/69labs/main/favicon.png">
   <!-- Import Noto Sans from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <style>
@@ -11,8 +13,9 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Noto Sans', sans-serif; /* Updated font-family */
-      background-color: #f5f5f5;
+      font-family: 'Noto Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,152 +25,163 @@
     }
 
     .container {
-      max-width: 600px;
-      padding: 20px;
+      max-width: 700px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 20px;
     }
 
     h1 {
-      font-size: 2.5em;
-      color: #333;
-      margin-bottom: 10px;
+      font-size: 2.8em;
+      color: #1a73e8;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
 
     h2 {
-      font-size: 1.8em;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      font-size: 2em;
+      color: #1a73e8;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
 
     p {
       font-size: 1.2em;
-      color: #666;
-      margin-bottom: 20px;
+      color: #555;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
     .signup-form {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      margin-top: 20px;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
     }
 
     .signup-form input[type="email"] {
-      padding: 10px;
+      padding: 12px;
       font-size: 1em;
       border: 1px solid #ccc;
       border-radius: 5px;
-      width: 250px;
+      width: 280px;
       outline: none;
-      transition: border-color 0.3s;
+      transition: border-color 0.3s, box-shadow 0.3s;
     }
 
     .signup-form input[type="email"]:focus {
-      border-color: #333;
+      border-color: #1a73e8;
+      box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
     }
 
     .signup-form button {
-      padding: 10px 20px;
+      padding: 12px 25px;
       font-size: 1em;
-      background-color: #333;
+      background-color: #1a73e8;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.1s;
     }
 
     .signup-form button:hover {
-      background-color: #555;
+      background-color: #1557b0;
+      transform: translateY(-2px);
     }
 
     .success-message {
       display: none;
-      color: #333;
+      color: #1a73e8;
       font-size: 1em;
-      margin-top: 10px;
+      margin-top: 15px;
+      font-weight: 500;
     }
 
     .logo {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
-    .yin-yang {
-      animation: rotateClockwise 6s linear infinite;
-      transform-origin: center;
+    .logo img {
+      max-width: 250px; /* Slightly larger for better visibility */
+      height: auto;
     }
 
-    .orbit {
-      animation: rotateCounterClockwise 4s linear infinite;
-      transform-origin: center;
+    .cta-label {
+      font-size: 1.4em;
+      color: #1a73e8;
+      margin-bottom: 10px;
+      font-weight: 500;
     }
 
-    @keyframes rotateClockwise {
-      from {
-        transform: rotate(0deg);
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
       }
-      to {
-        transform: rotate(360deg);
-      }
-    }
 
-    @keyframes rotateCounterClockwise {
-      from {
-        transform: rotate(0deg);
+      h2 {
+        font-size: 1.6em;
       }
-      to {
-        transform: rotate(-360deg);
+
+      p {
+        font-size: 1em;
+      }
+
+      .signup-form input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .signup-form button {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .logo img {
+        max-width: 150px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Animated Logo -->
+    <!-- Static Logo -->
     <div class="logo">
-      <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
-        <g class="yin-yang">
-          <circle cx="100" cy="100" r="80" fill="none" stroke="black" stroke-width="2"/>
-          <path d="M100,20 A80,80 0 0,1 180,100 A80,80 0 0,0 100,180 A80,80 0 0,1 20,100 A80,80 0 0,0 100,20" fill="black"/>
-          <path d="M100,20 A80,80 0 0,0 20,100 A80,80 0 0,1 100,180 A80,80 0 0,0 180,100 A80,80 0 0,1 100,20" fill="white"/>
-          <circle cx="60" cy="60" r="10" fill="white"/>
-          <circle cx="140" cy="140" r="10" fill="black"/>
-        </g>
-        <g class="orbit">
-          <circle cx="100" cy="100" r="90" fill="none" stroke="black" stroke-width="1"/>
-          <circle class="dot" cx="190" cy="100" r="3" fill="black"/>
-          <circle class="dot" cx="146" cy="173" r="3" fill="black"/>
-          <circle class="dot" cx="54" cy="173" r="3" fill="black"/>
-          <circle class="dot" cx="10" cy="100" r="3" fill="black"/>
-          <circle class="dot" cx="54" cy="27" r="3" fill="black"/>
-        </g>
-        <text x="100" y="240" font-family="Novo Sans, sans-serif" font-style="italic" font-size="18" fill="black" text-anchor="middle">Sixty Nine labs</text>
-      </svg>
+      <img src="https://raw.githubusercontent.com/SriniGundelli/69labs/main/logo.png" alt="Sixty Nine labs Logo">
     </div>
 
     <!-- Headline and Description -->
-    <h1>Sixty Nine labs: Elevating Leadership Talent with Tech & Insight</h1>
-    <p>We’re Sixty Nine labs, and we’re transforming how organizations find, grow, and keep exceptional leaders. By blending smart tech with deep human insight, we create leadership solutions that drive impact. Sign up to be the first to know when we launch!</p>
+    <h1>Sixty Nine labs: Elevating Leadership Talent with Tech & Insights</h1>
+    <p>At Sixty Nine Labs, we’re reimagining how exceptional leaders are discovered, developed, and retained. By combining intelligent technology with human-centred expertise, we craft leadership solutions that deliver lasting impact. Be the first to know when we launch.</p>
 
-    <!-- Our Mission -->
-    <h2>Leadership Talent That Powers Success</h2>
-    <p>We’re here to redefine how companies build their leadership pipelines. Finding, developing, and retaining great leaders is tough—too often, the process feels disconnected or outdated. That’s where we come in. At Sixty Nine labs, we use data-driven tech and human-focused strategies to spot high-potential leaders, nurture their growth, and ensure they thrive in your organization. We’re all about helping you build leadership teams that drive real, lasting success.</p>
+    <!-- Leadership Talent That Drives Real Outcomes -->
+    <h2>Leadership Talent That Drives Real Outcomes</h2>
+    <p>The future of your business hinges on the quality of its leadership. Yet, building a strong pipeline of capable leaders remains one of the toughest challenges for any organisation. We exist to change that. Sixty Nine Labs bridges the gap between data and decision-making. Our approach blends robust analytics with strategic insight to help you identify, nurture, and retain high-potential leadership at every stage of the journey. It’s leadership development for the modern age—smart, scalable, and deeply human.</p>
 
-    <!-- What Sets Us Apart -->
-    <h2>Tech That Unlocks Leadership Potential</h2>
-    <p>We don’t just throw tech at leadership challenges—we make it work for people. Our Talent Harmony Platform uses AI to identify leadership potential within your team, map out tailored development paths, and align them with your business goals. It’s your go-to tool for discovering future leaders, fostering their skills, and keeping them engaged so they stay and lead with impact. With us, leadership talent solutions feel precise, personal, and powerful.</p>
+    <!-- Technology That Works for People -->
+    <h2>Technology That Works for People</h2>
+    <p>We don’t just build tech — we build tools that serve people. Our proprietary Talent Harmony Platform uses AI to assess leadership potential, design bespoke development journeys, and align talent strategy with your broader business goals. From succession planning to team optimisation, we make it easy to grow the leaders your business needs, not just today, but for the road ahead. Leadership, redefined: data-led, insight-driven, and personal to the core.</p>
 
-    <!-- Why We’re Different -->
-    <h2>Innovation Meets Balance for Leadership Excellence</h2>
-    <p>We’re an innovation lab laser-focused on leadership, working with experts and bold thinkers to create tech that’s practical and future-ready. Our yin-yang logo, with its spinning "6" and "9" design, reflects our approach: we balance cutting-edge tech with the human side of leadership, always moving, always evolving. Choose Sixty Nine labs, and you’re choosing leadership solutions that are thoughtful, impactful, and built to shape the leaders of tomorrow.</p>
+    <!-- A New Balance for Modern Leadership -->
+    <h2>A New Balance for Modern Leadership</h2>
+    <p>Innovation without wisdom is noise. That’s why we designed our brand around the yin-yang principle, reflected in our signature "6" and "9" logo. It’s a symbol of balance: where advanced technology meets human insight, and where motion drives evolution. Sixty Nine Labs is more than a platform—it’s a movement towards a smarter, more sustainable leadership future. Whether you’re scaling your C-suite, preparing your next-gen talent, or investing in transformative leadership solutions, we’re here to help you shape what comes next.</p>
 
-    <!-- Email Sign-Up Form with Formspree Endpoint -->
+    <!-- Email Sign-Up Form with Updated Call to Action -->
+    <div class="cta-label">Let's Stay Connected</div>
     <form class="signup-form" id="signup-form" action="https://formspree.io/f/xanowljk" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Join the Leadership Revolution—Sign Up!</button>
+      <button type="submit">Sign Up</button>
     </form>
     <div class="success-message" id="success-message">Thank you! We’ll notify you when we launch.</div>
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #777; font-size: 0.9em;">
+  &copy; 2025 Sixty Nine labs. All rights reserved.
+</footer>
   </div>
 
   <script>
