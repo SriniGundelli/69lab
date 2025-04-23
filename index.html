@@ -25,13 +25,13 @@
     }
 
     .container {
-      max-width: 900px; /* Increased width for more breathing room */
-      padding: 40px; /* Increased padding for spaciousness */
+      max-width: 900px;
+      padding: 40px;
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin: 200px auto; /* 200px top/bottom, auto left/right for centering */
-      width: calc(100% - 400px); /* Ensure 200px space on each side (left + right = 400px) */
+      margin: 200px auto;
+      width: calc(100% - 400px);
       box-sizing: border-box;
     }
 
@@ -46,7 +46,7 @@
       font-size: 2em;
       color: #1a73e8;
       margin-top: 40px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       font-weight: 700;
     }
 
@@ -55,6 +55,11 @@
       color: #555;
       margin-bottom: 25px;
       line-height: 1.6;
+    }
+
+    .section-divider {
+      border-top: 1px solid #e0e0e0;
+      margin: 30px 0;
     }
 
     .signup-form {
@@ -82,7 +87,7 @@
     }
 
     .signup-form button {
-      padding: 12px 25px;
+      padding: 14px 30px;
       font-size: 1em;
       background-color: #1a73e8;
       color: white;
@@ -106,7 +111,10 @@
     }
 
     .logo {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
     }
 
     .logo img {
@@ -115,18 +123,27 @@
     }
 
     .cta-label {
-      font-size: 1.4em;
+      font-size: 1.6em;
       color: #1a73e8;
       margin-bottom: 10px;
-      font-weight: 500;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      color: #777;
+      font-size: 1em;
+      text-align: center;
     }
 
     /* Responsive Design */
     @media (max-width: 1024px) { /* iPad and smaller */
       .container {
         max-width: 700px;
-        margin: 100px auto; /* Reduced margin for smaller screens */
-        width: calc(100% - 200px); /* 100px space on each side */
+        margin: 100px auto;
+        width: calc(100% - 200px);
         padding: 30px;
       }
 
@@ -146,8 +163,8 @@
     @media (max-width: 600px) { /* Mobile */
       .container {
         max-width: 90%;
-        margin: 50px auto; /* Further reduced margin for mobile */
-        width: calc(100% - 100px); /* 50px space on each side */
+        margin: 50px auto;
+        width: calc(100% - 100px);
         padding: 20px;
       }
 
@@ -190,17 +207,24 @@
     <h1>Sixty Nine labs: Elevating Leadership Talent with Tech & Insights</h1>
     <p>At Sixty Nine Labs, we’re reimagining how exceptional leaders are discovered, developed, and retained. By combining intelligent technology with human-centred expertise, we craft leadership solutions that deliver lasting impact. Be the first to know when we launch.</p>
 
+    <div class="section-divider"></div>
+
     <!-- Leadership Talent That Drives Real Outcomes -->
     <h2>Leadership Talent That Drives Real Outcomes</h2>
-    <p>The future of your business hinges on the quality of its leadership. Yet, building a strong pipeline of capable leaders remains one of the toughest challenges for any organisation. We exist to change that. Sixty Nine Labs bridges the gap between data and decision-making. Our approach blends robust analytics with strategic insight to help you identify, nurture, and retain high-potential leadership at every stage of the journey. It’s leadership development for the modern age - smart, scalable, and deeply human.</p>
+    <p>The future of your business hinges on the quality of its leadership. Yet, building a strong pipeline of capable leaders remains one of the toughest challenges for any organisation. We exist to change that. Sixty Nine Labs bridges the gap between data and decision-making. Our approach blends robust analytics with strategic insight to help you identify, nurture, and retain high-potential leadership at every stage of the journey. It’s leadership development for the modern age: smart, scalable, and deeply human.</p>
+
+    <div class="section-divider"></div>
 
     <!-- Technology That Works for People -->
     <h2>Technology That Works for People</h2>
-    <p>We don’t just build tech, we build tools that serve people. Our proprietary Talent Harmony Platform uses AI to assess leadership potential, design bespoke development journeys, and align talent strategy with your broader business goals. From succession planning to team optimisation, we make it easy to grow the leaders your business needs - not just today, but for the road ahead. <h2>Leadership, redefined: data-led, insight-driven, and personal to the core.</h2></p>
+    <p>We don’t just build tech, we build tools that serve people. Our proprietary Talent Harmony Platform uses AI to assess leadership potential, design bespoke development journeys, and align talent strategy with your broader business goals. From succession planning to team optimisation, we make it easy to grow the leaders your business needs, not just today, but for the road ahead.</p>
+    <h2>Leadership, redefined: data-led, insight-driven, and personal to the core.</h2>
+
+    <div class="section-divider"></div>
 
     <!-- A New Balance for Modern Leadership -->
     <h2>A New Balance for Modern Leadership</h2>
-    <p>Innovation without wisdom is noise. That’s why we designed our brand around the yin-yang principle, reflected in our signature "6" and "9" logo. It’s a symbol of balance: where advanced technology meets human insights, and where motion drives evolution. Sixty Nine Labs is more than a platform — it’s a movement towards a smarter, more sustainable leadership future. Whether you’re scaling your C-suite, preparing your next-gen High-Potential talent, or investing in transformative leadership solutions, we’re here to help you shape what comes next.</p>
+    <p>Innovation without wisdom is noise. That’s why we designed our brand around the yin-yang principle, reflected in our signature "6" and "9" logo. It’s a symbol of balance: where advanced technology meets human insights, and where motion drives evolution. Sixty Nine Labs is more than a platform; it’s a movement towards a smarter, more sustainable leadership future. Whether you’re scaling your C-suite, preparing your next-gen High-Potential talent, or investing in transformative leadership solutions, we’re here to help you shape what comes next.</p>
 
     <!-- Email Sign-Up Form with Updated Call to Action -->
     <div class="cta-label">Let's Stay Connected</div>
@@ -209,7 +233,8 @@
       <button type="submit">Sign Up</button>
     </form>
     <div class="success-message" id="success-message">Thank you! We’ll notify you when we launch.</div>
-    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #777; font-size: 0.9em;">
+
+    <footer>
       © 2025 Sixty Nine labs. All rights reserved.
     </footer>
   </div>
