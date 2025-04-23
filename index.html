@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sixty Nine labs - Leadership Talent Solutions</title>
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/SriniGundelli/69labs/main/favicon.png">
+  <link rel="icon" type="image/x-icon" href="https://via.placeholder.com/32x32.png?text=69">
   <!-- Import Noto Sans from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <style>
@@ -25,12 +25,14 @@
     }
 
     .container {
-      max-width: 700px;
-      padding: 30px;
+      max-width: 900px; /* Increased width for more breathing room */
+      padding: 40px; /* Increased padding for spaciousness */
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin: 20px;
+      margin: 200px auto; /* 200px top/bottom, auto left/right for centering */
+      width: calc(100% - 400px); /* Ensure 200px space on each side (left + right = 400px) */
+      box-sizing: border-box;
     }
 
     h1 {
@@ -108,7 +110,7 @@
     }
 
     .logo img {
-      max-width: 250px; /* Slightly larger for better visibility */
+      max-width: 250px;
       height: auto;
     }
 
@@ -120,9 +122,37 @@
     }
 
     /* Responsive Design */
-    @media (max-width: 600px) {
+    @media (max-width: 1024px) { /* iPad and smaller */
+      .container {
+        max-width: 700px;
+        margin: 100px auto; /* Reduced margin for smaller screens */
+        width: calc(100% - 200px); /* 100px space on each side */
+        padding: 30px;
+      }
+
       h1 {
-        font-size: 2.2em;
+        font-size: 2.4em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+
+    @media (max-width: 600px) { /* Mobile */
+      .container {
+        max-width: 90%;
+        margin: 50px auto; /* Further reduced margin for mobile */
+        width: calc(100% - 100px); /* 50px space on each side */
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
       }
 
       h2 {
@@ -162,15 +192,15 @@
 
     <!-- Leadership Talent That Drives Real Outcomes -->
     <h2>Leadership Talent That Drives Real Outcomes</h2>
-    <p>The future of your business hinges on the quality of its leadership. Yet, building a strong pipeline of capable leaders remains one of the toughest challenges for any organisation. We exist to change that. Sixty Nine Labs bridges the gap between data and decision-making. Our approach blends robust analytics with strategic insight to help you identify, nurture, and retain high-potential leadership at every stage of the journey. It’s leadership development for the modern age—smart, scalable, and deeply human.</p>
+    <p>The future of your business hinges on the quality of its leadership. Yet, building a strong pipeline of capable leaders remains one of the toughest challenges for any organisation. We exist to change that. Sixty Nine Labs bridges the gap between data and decision-making. Our approach blends robust analytics with strategic insight to help you identify, nurture, and retain high-potential leadership at every stage of the journey. It’s leadership development for the modern age - smart, scalable, and deeply human.</p>
 
     <!-- Technology That Works for People -->
     <h2>Technology That Works for People</h2>
-    <p>We don’t just build tech — we build tools that serve people. Our proprietary Talent Harmony Platform uses AI to assess leadership potential, design bespoke development journeys, and align talent strategy with your broader business goals. From succession planning to team optimisation, we make it easy to grow the leaders your business needs, not just today, but for the road ahead. Leadership, redefined: data-led, insight-driven, and personal to the core.</p>
+    <p>We don’t just build tech, we build tools that serve people. Our proprietary Talent Harmony Platform uses AI to assess leadership potential, design bespoke development journeys, and align talent strategy with your broader business goals. From succession planning to team optimisation, we make it easy to grow the leaders your business needs - not just today, but for the road ahead. <h2>Leadership, redefined: data-led, insight-driven, and personal to the core.</h2></p>
 
     <!-- A New Balance for Modern Leadership -->
     <h2>A New Balance for Modern Leadership</h2>
-    <p>Innovation without wisdom is noise. That’s why we designed our brand around the yin-yang principle, reflected in our signature "6" and "9" logo. It’s a symbol of balance: where advanced technology meets human insight, and where motion drives evolution. Sixty Nine Labs is more than a platform—it’s a movement towards a smarter, more sustainable leadership future. Whether you’re scaling your C-suite, preparing your next-gen talent, or investing in transformative leadership solutions, we’re here to help you shape what comes next.</p>
+    <p>Innovation without wisdom is noise. That’s why we designed our brand around the yin-yang principle, reflected in our signature "6" and "9" logo. It’s a symbol of balance: where advanced technology meets human insights, and where motion drives evolution. Sixty Nine Labs is more than a platform — it’s a movement towards a smarter, more sustainable leadership future. Whether you’re scaling your C-suite, preparing your next-gen High-Potential talent, or investing in transformative leadership solutions, we’re here to help you shape what comes next.</p>
 
     <!-- Email Sign-Up Form with Updated Call to Action -->
     <div class="cta-label">Let's Stay Connected</div>
@@ -180,8 +210,8 @@
     </form>
     <div class="success-message" id="success-message">Thank you! We’ll notify you when we launch.</div>
     <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #777; font-size: 0.9em;">
-  &copy; 2025 Sixty Nine labs. All rights reserved.
-</footer>
+      © 2025 Sixty Nine labs. All rights reserved.
+    </footer>
   </div>
 
   <script>
