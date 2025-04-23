@@ -1,2 +1,2 @@
-# 69lab.ai
-69lab - developing (conversational multi-modal AI for interview scheduling)
+# 69labs.ai
+69labs - developing leadership talent solutions
