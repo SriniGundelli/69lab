@@ -9,6 +9,28 @@
   <!-- Import Noto Sans from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <style>
+    .agent-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.agent {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.agent img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
     /* General Styles */
     body {
       margin: 0;
@@ -248,5 +270,44 @@
       successMessage.style.display = 'block';
     });
   </script>
+  /* Team */
+<h2>Meet Our Global Agentic Automation Team</h2>
+<div class="agent-team">
+  <div class="agent">
+    <img src="assets/images/team/ava.jpg" alt="Ava">
+    <h3>Ava</h3>
+    <p><strong>Automation Vision Architect</strong><br>USA</p>
+  </div>
+  <div class="agent">
+    <img src="assets/images/team/sofia.jpg" alt="Sofia">
+    <h3>Sofia</h3>
+    <p><strong>Revenue Automation Mechanic</strong><br>Latin America</p>
+  </div>
+  <div class="agent">
+    <img src="assets/images/team/max.jpg" alt="Max">
+    <h3>Max</h3>
+    <p><strong>Core Automation Decoder</strong><br>Europe</p>
+  </div>
+  <div class="agent">
+    <img src="assets/images/team/priya.jpg" alt="Priya">
+    <h3>Priya</h3>
+    <p><strong>Neural Automation Integrator</strong><br>India</p>
+  </div>
+  <div class="agent">
+    <img src="assets/images/team/liang.jpg" alt="Liang">
+    <h3>Liang</h3>
+    <p><strong>Leadership Automation Catalyst</strong><br>China</p>
+  </div>
+  <div class="agent">
+    <img src="assets/images/team/kate.jpg" alt="Kate">
+    <h3>Kate</h3>
+    <p><strong>Task Automation Specialist</strong><br>UK</p>
+  </div>
+  <div class="agent">
+    <img src="assets/images/team/leo.jpg" alt="Leo">
+    <h3>Leo</h3>
+    <p><strong>Zero-touch Automation Enabler</strong><br>Australia</p>
+  </div>
+</div>
 </body>
 </html>
